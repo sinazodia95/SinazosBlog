@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section> 
+		
+        <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
+		<input type="hidden" name="send_to" value="sinazodia95@gmail.com">
+			
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<fieldset>
+				<legend>contact information</legend> 
+			 <label for="name">Your name </label>
+			 <input type="text" id="name" name="name" placeholder="Type Your name">
+			 <label for="phone"> Phone number</label> 
+			 <input type="tel" id="phone" name="phone">
+			 <label for="email">Email</label></p>
+		 	 <input type="email" id="email" name="email">
+			</fieldset><br>
+			<fieldset>
+				<legend>About your abduction</legend>  
+				<lable for="date">Requested  date</lable> 
+				<input type="date" id="date" name="date">
+				<label for="qty"> many people would you like abducted?</label>
+				<input type="number" min="1" max="10" id="qty" name="qty">
+
+				<p>What type of UFO do you prefer?</p>
+
+					<Label>
+						<input type="radio" name="ufotype" value="classic">b Classic oval UFO
+					</Label>
+					<label>
+						<input type="radio" name="ufotype" value="starwars" checked>Star Wars-style Imperial cruiser
+					</label>	
+					<label>
+						<input type="radio" name="ufotype" value="Battlestar">Battlestar Galactica-style Viper
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="borg">Borg-style cube
+					</label>	
+					
+						
+				<lable for="abtype">What type of abduction experience do you want?</lable>
+					<select id="abtype">
+						<option selected>Select One</option>
+						<option value="tour" > Tour of the solar system</option>
+						<option value="dinner">Alien dinner and discussion</option>
+						<option value="dance">Alien dance lessons</option>
+						<option value="whales">Whale watching</option>
+						
+					</select>
+						
+					
+				<label for="comments"> Specail requests:</label>
+				<textarea id="comments" name="comments"></textarea>
+				<label for="">
+					<input  type="checkbox" value="subsbcribe" name="subscribe" id="subsbcribe" checked> Add me to your email list
+				</label>
+			</fieldset>
+			<button type="submit">SUBMIT</button>
+			
+		</form>
+						
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		</aside>
+	</div>
+</body>
+</html>
+
+
+
+
+
